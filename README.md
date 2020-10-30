@@ -12,18 +12,19 @@ yum install zip -y
 
 python3 -m venv function-env
 
-ls function-env/lib/python3.7/site-packages/
-
 source function-env/bin/activate
 
 pip3 install prettytable 
 
 deactivate
+
 cd /function-env/lib/python3.7/site-packages
 
 zip -r9 /mnt/rps.zip .
 
 Ctrl d to exit and kill container
+
+cd /some/path/on/your/mac
 
 zip -g rps.zip rock_paper_scissors.py
 
